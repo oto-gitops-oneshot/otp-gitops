@@ -3,9 +3,12 @@ resources:
  - argocd/consolenotification.yaml
  
  #- argocd/namespaces/namespace-ibm-common-services.yaml
- #- argocd/namespaces/namespace-cloudpak.yaml
  #- argocd/namespaces/namespace-openldap.yaml
  #- argocd/namespaces/namespace-cert-manager.yaml
+
+# CloudPak Namespaces
+ - argocd/namespaces/namespace-cp4ba.yaml
+# - argocd/namespaces/namespace-cp4i.yaml
  
  # External Secrets
  - argocd/rbac/rbac-external-secrets.yaml
