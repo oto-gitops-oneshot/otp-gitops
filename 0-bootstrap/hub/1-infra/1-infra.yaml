@@ -24,7 +24,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: ibm-common-services
     server: https://kubernetes.default.svc
-  - namespace: cloudpak
+  - namespace: cloudpak # This needs to be changed
     server: https://kubernetes.default.svc
   - namespace: istio-system
     server: https://kubernetes.default.svc
