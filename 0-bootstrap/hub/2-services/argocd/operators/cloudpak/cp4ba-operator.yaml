@@ -2,8 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cp4ba-operator
-  annotations:
-    argocd.argoproj.io/sync-wave: "230"
+  # annotations:
+  #   argocd.argoproj.io/sync-wave: "230"
   labels:
     gitops.tier.group: ibm-cloudpak
     gitops.tier.layer: services
