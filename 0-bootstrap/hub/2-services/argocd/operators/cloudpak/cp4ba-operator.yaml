@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: operators/cloudpak/ibm-cp4a-operator
+    path: operators/cloudpak/cp4ba-operator
   syncPolicy:
     automated:
       prune: true
