@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ibm-cp4mcm-operator
+  name: cp4ba-operator
   annotations:
     argocd.argoproj.io/sync-wave: "230"
   labels:
@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: operators/ibm-cp4mcm-operator
+    path: operators/ibm-cp4a-operator
   syncPolicy:
     automated:
       prune: true

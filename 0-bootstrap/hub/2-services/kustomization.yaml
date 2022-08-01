@@ -47,11 +47,14 @@ resources:
  # Red Hat Advanced Cluster Management - Discovery Service
  #- argocd/instances/openshift-acm-discovery-service.yaml
 
- #- argocd/operators/ibm-cp4mcm-operator.yaml
+ #- argocd/operators/cloudpak/ibm-cp4mcm-operator.yaml
  #- argocd/instances/ibm-cp4mcm-instance.yaml
  #- argocd/operators/ibm-infra-automation-operator.yaml
  #- argocd/instances/ibm-infra-automation-instance.yaml
 
+ # CP4BA 
+ #- argocd/operators/cloudpak/cp4ba-operator.yaml
+ 
  # Ansible Automation Platform
  - argocd/operators/ansible-automation-platform-operator.yaml
  - argocd/instances/ansible-automation-platform-instance.yaml
