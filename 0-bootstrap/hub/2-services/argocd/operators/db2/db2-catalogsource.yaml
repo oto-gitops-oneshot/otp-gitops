@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: db2-operator-catalogsources
   annotations:
-    argocd.argoproj.io/sync-wave: "250"
+    argocd.argoproj.io/sync-wave: "240"
   labels:
     gitops.tier.group: ibm-cloudpak
     gitops.tier.layer: services

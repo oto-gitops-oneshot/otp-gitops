@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: db2-operator-subscription
   annotations:
-    argocd.argoproj.io/sync-wave: "260"
+    argocd.argoproj.io/sync-wave: "250"
   labels:
     gitops.tier.group: ibm-cloudpak
     gitops.tier.layer: services
