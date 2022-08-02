@@ -1,9 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cp4ba-operator
-  # annotations:
-  #   argocd.argoproj.io/sync-wave: "230"
+  name: cp4ba-operator-catalogsources
+  annotations:
+    argocd.argoproj.io/sync-wave: "240"
   labels:
     gitops.tier.group: ibm-cloudpak
     gitops.tier.layer: services
@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: operators/cloudpak/cp4ba-operator
+    path: operators/cloudpak/cp4ba-operator/subscription
   syncPolicy:
     automated:
       prune: true
