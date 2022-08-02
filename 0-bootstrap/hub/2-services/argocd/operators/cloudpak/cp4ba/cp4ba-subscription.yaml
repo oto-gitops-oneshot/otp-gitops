@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cp4ba-operator-catalogsources
+  name: cp4ba-operator-subscription
   annotations:
     argocd.argoproj.io/sync-wave: "240"
   labels:
