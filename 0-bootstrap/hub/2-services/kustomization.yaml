@@ -30,6 +30,10 @@ resources:
  # In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
  - argocd/operators/openshift-pipelines.yaml
 
+# DB2
+ - argocd/operators/db2/db2-catalogsource.yaml
+ - argocd/operators/db2/db2-subscription.yaml
+
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
  #- argocd/operators/jaeger.yaml
