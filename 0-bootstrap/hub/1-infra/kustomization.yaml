@@ -3,7 +3,7 @@ resources:
  - argocd/consolenotification.yaml
  
  #- argocd/namespaces/namespace-ibm-common-services.yaml
- # - argocd/namespaces/namespace-openldap.yaml
+ - argocd/namespaces/namespace-openldap.yaml
  #- argocd/namespaces/namespace-cert-manager.yaml
 
  - argocd/namespaces/namespace-db2.yaml
