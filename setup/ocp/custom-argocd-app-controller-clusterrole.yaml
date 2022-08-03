@@ -8,6 +8,7 @@ rules:
     apiGroups:
       - ''
     resources:
+      - ingresses
       - pods
       - services
       - services/finalizers
