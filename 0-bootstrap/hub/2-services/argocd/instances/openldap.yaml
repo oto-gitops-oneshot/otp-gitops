@@ -147,8 +147,6 @@ spec:
             enabled: false
           env:
             PHPLDAPADMIN_LDAP_HOSTS: "{{ openldap_hostname }}"
-                    
-
   syncPolicy:
     automated:
       prune: true
