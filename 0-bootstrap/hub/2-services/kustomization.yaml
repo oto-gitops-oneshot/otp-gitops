@@ -33,6 +33,7 @@ resources:
 # DB2
  - argocd/operators/db2/db2-catalogsource.yaml
  - argocd/operators/db2/db2-subscription.yaml
+ - argocd/instances/db2cluster-instance.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
