@@ -216,7 +216,7 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - db2u.databases.ibm.com/v1
+      - db2u.databases.ibm.com
     resources:
       - db2uclusters
   - verbs:
