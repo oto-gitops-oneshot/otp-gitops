@@ -13,7 +13,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: instances/db2
+    path: instances/db2/create
   syncPolicy:
     automated:
       prune: true
