@@ -70,7 +70,7 @@ resources:
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
 #  - argocd/namespaces/namespace-openshift-storage.yaml
 #  - argocd/storage.yaml
- 
+ # - argocd/pvc/db2-pvc.yaml
  # MachineSets and Infra Nodes
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
  - argocd/machinesets.yaml
