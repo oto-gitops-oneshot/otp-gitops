@@ -9,7 +9,7 @@ resources:
 
  # IBM Catalogs
  #- argocd/operators/ibm-catalogs.yaml
-
+ # - argocd/instances/db2-configure.yaml
  # Required for IBM MQ
  - argocd/instances/openldap.yaml
  # Required for IBM ACE, IBM MQ

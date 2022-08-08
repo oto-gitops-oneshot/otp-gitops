@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: db2-pvc
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  labels:
+    gitops.tier.group: cntk
+    gitops.tier.layer: infra
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: db2
+    server: 'https://kubernetes.default.svc'
+  project: infra
+  source:
+    path: instances/pvc/db2
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
