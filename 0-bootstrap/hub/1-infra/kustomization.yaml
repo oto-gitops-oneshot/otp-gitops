@@ -34,6 +34,9 @@ resources:
  # RHACM Metal Provisioner (Not required if Hub is running on Bare-Metal)
  #- argocd/namespaces/namespace-metal-provisioner.yaml
  
+ # OpenLDAP
+ - argocd/secrets/openldap-secret.yaml
+
  # DB2
  - argocd/rbac/rbac-db2-rootsquash.yaml
  - argocd/secrets/db2-pull-secret.yaml
