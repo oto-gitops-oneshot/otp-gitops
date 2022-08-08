@@ -37,6 +37,7 @@ resources:
  # DB2
  - argocd/rbac/rbac-db2-rootsquash.yaml
  - argocd/secrets/db2-pull-secret.yaml
+ #-argocd/rbac/rbac-db2-config.yaml
 
  # Ansible Automation Platform
  - argocd/namespaces/namespace-ansible-automation-platform.yaml
