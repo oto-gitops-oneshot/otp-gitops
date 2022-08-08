@@ -8,6 +8,7 @@ rules:
     apiGroups:
       - ''
     resources:
+      - ingresses
       - pods
       - services
       - services/finalizers
@@ -206,6 +207,18 @@ rules:
       - integrationservers
       - dashboards
       - configurations
+  - verbs:
+      - '*'
+    apiGroups:
+      - networking.k8s.io/v1
+    resources:
+      - ingresses
+  - verbs:
+      - '*'
+    apiGroups:
+      - db2u.databases.ibm.com
+    resources:
+      - db2uclusters
   - verbs:
       - '*'
     apiGroups:

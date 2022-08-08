@@ -3,7 +3,7 @@ resources:
  - argocd/consolenotification.yaml
  
  #- argocd/namespaces/namespace-ibm-common-services.yaml
- #- argocd/namespaces/namespace-openldap.yaml
+ - argocd/namespaces/namespace-openldap.yaml
  #- argocd/namespaces/namespace-cert-manager.yaml
 
  - argocd/namespaces/namespace-db2.yaml
@@ -34,6 +34,11 @@ resources:
  # RHACM Metal Provisioner (Not required if Hub is running on Bare-Metal)
  #- argocd/namespaces/namespace-metal-provisioner.yaml
  
+ # DB2
+ - argocd/rbac/rbac-db2-rootsquash.yaml
+ - argocd/secrets/db2-pull-secret.yaml
+ #-argocd/rbac/rbac-db2-config.yaml
+
  # Ansible Automation Platform
  - argocd/namespaces/namespace-ansible-automation-platform.yaml
  
@@ -65,7 +70,7 @@ resources:
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
 #  - argocd/namespaces/namespace-openshift-storage.yaml
 #  - argocd/storage.yaml
- 
+ # - argocd/pvc/db2-pvc.yaml
  # MachineSets and Infra Nodes
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
  - argocd/machinesets.yaml

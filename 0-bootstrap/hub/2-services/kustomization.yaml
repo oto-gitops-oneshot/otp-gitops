@@ -9,7 +9,7 @@ resources:
 
  # IBM Catalogs
  #- argocd/operators/ibm-catalogs.yaml
-
+ # - argocd/instances/db2-configure.yaml
  # Required for IBM MQ
  - argocd/instances/openldap.yaml
  # Required for IBM ACE, IBM MQ
@@ -29,6 +29,11 @@ resources:
  #- argocd/instances/grafana-instance.yaml
  # In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
  - argocd/operators/openshift-pipelines.yaml
+
+# DB2
+ - argocd/operators/db2/db2-catalogsource.yaml
+ - argocd/operators/db2/db2-subscription.yaml
+ - argocd/instances/db2cluster-instance.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml

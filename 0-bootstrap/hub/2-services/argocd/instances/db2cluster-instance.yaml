@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: db2cluster-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "290"
+  labels:
+    gitops.tier.group: cntk
+    gitops.tier.layer: services
+spec:
+  destination:
+    namespace: tools
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: instances/db2/create
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
