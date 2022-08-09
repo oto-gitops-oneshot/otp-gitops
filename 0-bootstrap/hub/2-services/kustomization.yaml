@@ -24,6 +24,9 @@ resources:
  - argocd/operators/external-secrets.yaml
  - argocd/instances/external-secrets.yaml
 
+ # SealedSecrets for API Key for External Secrets
+ - argocd/instances/api-key-sealedsecret.yaml
+
  # CICD
  #- argocd/operators/grafana-operator.yaml
  #- argocd/instances/grafana-instance.yaml
