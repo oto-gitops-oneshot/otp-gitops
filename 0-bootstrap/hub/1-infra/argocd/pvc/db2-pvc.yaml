@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: infra
   source:
-    path: instances/pvc/db2
+    path: pvc/db2
   syncPolicy:
     automated:
       prune: true
