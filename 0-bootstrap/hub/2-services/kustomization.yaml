@@ -11,7 +11,6 @@ resources:
  #- argocd/operators/ibm-catalogs.yaml
  # - argocd/instances/db2-configure.yaml
  # Required for IBM MQ
- - argocd/instances/openldap.yaml
  # Required for IBM ACE, IBM MQ
  #- argocd/instances/cert-manager-instance.yaml
  
@@ -93,6 +92,12 @@ resources:
  - argocd/instances/quay-registry-instance.yaml
  - argocd/operators/quay-container-security.yaml
  - argocd/operators/quay-bridge-operator.yaml
+
+ # Deploying openldap based on osixia docker and apollo configuration 
+ - argocd/instances/openldap.yaml
+ # Configure db2 for cp4ba deployment 
+# - argocd/instances/cloudpak/cp4ba/db2-configure.yaml
+# - argocd/instances/cloudpak/cp4ba/dbs-cp4ba-configuration.yaml
 
 patches:
 - target:

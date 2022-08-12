@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: db2-pvc
+  name: dbs-cp4ba-configure
   annotations:
-    argocd.argoproj.io/sync-wave: "100"
+    argocd.argoproj.io/sync-wave: "300"
   labels:
     gitops.tier.group: cntk
-    gitops.tier.layer: infra
+    gitops.tier.layer: services
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: db2
     server: 'https://kubernetes.default.svc'
-  project: infra
+  project: services
   source:
-    path: pvc/db2
+    path: instances/cloudpak/cp4ba/dbs/db2
   syncPolicy:
     automated:
       prune: true
