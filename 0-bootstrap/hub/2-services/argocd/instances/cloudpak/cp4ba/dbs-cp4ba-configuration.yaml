@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: instances/cloudpak/cp4ba/dbs
+    path: instances/cloudpak/cp4ba/dbs/db2
   syncPolicy:
     automated:
       prune: true
