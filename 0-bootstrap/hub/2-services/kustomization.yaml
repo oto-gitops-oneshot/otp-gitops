@@ -96,8 +96,8 @@ resources:
  # Deploying openldap based on osixia docker and apollo configuration 
  - argocd/instances/openldap.yaml
  # Configure db2 for cp4ba deployment 
-# - argocd/instances/cloudpak/cp4ba/db2-configure.yaml
-# - argocd/instances/cloudpak/cp4ba/dbs-cp4ba-configuration.yaml
+# - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
+# - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
  - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
  - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
 patches:
