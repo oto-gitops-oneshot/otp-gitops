@@ -1,0 +1,21 @@
+# adding this here for you, we can remove this once the Kustomize is done
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespace-global-ca
+  namespace: openshift-gitops
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+spec:
+  destination:
+    namespace: db2
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: namespaces/cp4ba
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
