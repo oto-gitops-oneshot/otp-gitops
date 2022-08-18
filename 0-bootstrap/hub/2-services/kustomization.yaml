@@ -98,8 +98,8 @@ resources:
  # Configure db2 for cp4ba deployment 
 # - argocd/instances/cloudpak/cp4ba/db2-configure.yaml
 # - argocd/instances/cloudpak/cp4ba/dbs-cp4ba-configuration.yaml
- - argocd/instances/cloudpak/cp4ba/global-ca.yaml
- - argocd/instances/cloudpak/cp4ba/secrets.yaml
+ - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
+ - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
 patches:
 - target:
     group: argoproj.io
