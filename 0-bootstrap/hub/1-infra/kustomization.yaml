@@ -80,6 +80,10 @@ resources:
  # Console link
  - argocd/consolelink.yaml
 
+# Global CA 
+ - argocd/rbac/rbac-global-ca.yaml
+# adding entry for global ca - get rid of this once we kustomize 
+
 patches:
 - target:
     group: argoproj.io
