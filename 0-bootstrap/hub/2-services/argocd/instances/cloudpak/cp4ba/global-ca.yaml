@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: instances/cloudpak/cp4ba/global-ca
+    path: instances/cloudpak/cp4ba/predeploy/global-ca
   syncPolicy:
     automated:
       prune: true

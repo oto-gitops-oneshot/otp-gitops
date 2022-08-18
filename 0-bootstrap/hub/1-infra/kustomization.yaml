@@ -83,7 +83,6 @@ resources:
 # Global CA 
  - argocd/rbac/rbac-global-ca.yaml
 # adding entry for global ca - get rid of this once we kustomize 
- - argocd/namespaces/cloudpak/cp4ba/global-ca.yaml
 
 patches:
 - target:
