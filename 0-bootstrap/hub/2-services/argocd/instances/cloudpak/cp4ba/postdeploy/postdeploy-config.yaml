@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: postdeploy-configuration-job
   annotations:
-    argocd.argoproj.io/sync-wave: "301"
+    argocd.argoproj.io/sync-wave: "300"
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services
