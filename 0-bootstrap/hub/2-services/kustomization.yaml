@@ -62,7 +62,7 @@ resources:
  # CP4BA 
  - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
  - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
- # - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
+ - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
  
  # Ansible Automation Platform
  - argocd/operators/ansible-automation-platform-operator.yaml
