@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespace-apollo-one-shot
+  namespace: openshift-gitops
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+spec:
+  destination:
+    namespace: apollo-one-shot
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: namespaces/apollo-one-shot
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
