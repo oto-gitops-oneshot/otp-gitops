@@ -7,7 +7,7 @@ resources:
  #- argocd/namespaces/namespace-cert-manager.yaml
 
  - argocd/namespaces/namespace-db2.yaml
- - argocd/namespaces/namespace-output-info.yaml
+ # - argocd/namespaces/namespace-output-info.yaml
  - argocd/namespaces/namespace-global-sa.yaml
 
 
