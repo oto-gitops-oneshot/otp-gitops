@@ -8,6 +8,8 @@ resources:
 
  - argocd/namespaces/namespace-db2.yaml
  - argocd/namespaces/namespace-output-info.yaml
+- argocd/namespaces/namespace-global-sa.yaml
+
 
 # CloudPak Namespaces
  - argocd/namespaces/namespace-cp4ba.yaml
