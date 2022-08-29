@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: automation-ui-config
   annotations:
-    argocd.argoproj.io/sync-wave: "295"
+    argocd.argoproj.io/sync-wave: "281"
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services
