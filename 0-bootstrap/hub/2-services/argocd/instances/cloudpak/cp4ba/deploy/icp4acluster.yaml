@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: icp4acluster-deployment
   annotations:
-    argocd.argoproj.io/sync-wave: "299"
+    argocd.argoproj.io/sync-wave: "285"
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services

@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: dbs-cp4ba-configure
   annotations:
-    argocd.argoproj.io/sync-wave: "297"
+    argocd.argoproj.io/sync-wave: "282"
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services
