@@ -106,7 +106,7 @@ resources:
 
  # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml
 
- - argocd/instances/cloudpak/cp4ba/postdeploy/postdeploy-config.yaml
+ #- argocd/instances/cloudpak/cp4ba/postdeploy/postdeploy-config.yaml
 
  # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml
 
