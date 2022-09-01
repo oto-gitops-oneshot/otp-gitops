@@ -42,6 +42,9 @@ resources:
  - argocd/secrets/db2-pull-secret.yaml
  #-argocd/rbac/rbac-db2-config.yaml
 
+# RBAC CP4BA 
+ - argocd/rbac/rbac-cp4ba.yaml
+
  # Ansible Automation Platform
  - argocd/namespaces/namespace-ansible-automation-platform.yaml
  
