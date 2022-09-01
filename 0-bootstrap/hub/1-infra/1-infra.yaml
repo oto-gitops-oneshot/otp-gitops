@@ -10,8 +10,6 @@ spec:
   destinations:
   - namespace: output-info
     server: https://kubernetes.default.svc
-  - namespace: global-sa
-    server: https://kubernetes.default.svc
   - namespace: db2
     server: https://kubernetes.default.svc
   - namespace: cp4ba
