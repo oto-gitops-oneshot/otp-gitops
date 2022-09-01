@@ -28,17 +28,11 @@ resources:
 # CP4BA - RBAC
  - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
 
-# CP4BA - Secrets
-# TODO: Add the ibm-entitlement key application here which adds the pull secret to the CP4BA namespace (sync wave considerations) 
-
 # DB2
 
 # DB2 - RBAC
  - argocd/rbac/db2/rbac-db2-rootsquash.yaml
 # - argocd/rbac/db2/rbac-db2-config.yaml   Will need to be uncommented out
-
-# DB2 - Secret
- - argocd/secrets/db2/db2-pull-secret.yaml
 
 # DB2 - PVC
 # - argocd/pvc/db2/db2-pvc.yaml           Will need to be uncommented out
