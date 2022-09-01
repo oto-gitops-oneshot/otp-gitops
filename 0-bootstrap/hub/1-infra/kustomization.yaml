@@ -10,7 +10,7 @@ resources:
 # MCM 
 
 # MCM - Namespaces
-# - argocd/namespaces/cloudpal/mcm/namespace-ibm-infra-automation.yaml
+# - argocd/namespaces/cloudpak/mcm/namespace-ibm-infra-automation.yaml
 
 # CP4I 
 
