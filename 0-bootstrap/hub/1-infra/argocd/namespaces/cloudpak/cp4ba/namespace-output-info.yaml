@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/output-info
+    path: namespaces/cloudpak/cp4ba/output-info
   syncPolicy:
     automated:
       prune: true

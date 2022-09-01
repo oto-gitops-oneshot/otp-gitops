@@ -15,7 +15,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: rbac/db2-rootsquash
+    path: rbac/db2/db2-rootsquash
   syncPolicy:
     automated:
       prune: true

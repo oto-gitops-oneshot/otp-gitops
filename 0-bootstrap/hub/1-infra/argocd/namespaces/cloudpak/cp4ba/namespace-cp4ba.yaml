@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/cloudpak/cp4ba
+    path: namespaces/cloudpak/cp4ba/main
   syncPolicy:
     automated:
       prune: true

@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/db2
+    path: namespaces/cloudpak/cp4ba/db2
   syncPolicy:
     automated:
       prune: true

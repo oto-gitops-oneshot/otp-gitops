@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/openldap
+    path: namespaces/cloudpak/cp4ba/openldap
   syncPolicy:
     automated:
       prune: true
