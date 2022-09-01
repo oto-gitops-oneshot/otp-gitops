@@ -3,17 +3,46 @@ resources:
  - argocd/consolenotification.yaml
  
  #- argocd/namespaces/namespace-ibm-common-services.yaml
- - argocd/namespaces/namespace-openldap.yaml
  #- argocd/namespaces/namespace-cert-manager.yaml
 
- - argocd/namespaces/namespace-db2.yaml
- - argocd/namespaces/namespace-output-info.yaml
+# CloudPaks
 
+# MCM 
 
-# CloudPak Namespaces
- - argocd/namespaces/namespace-cp4ba.yaml
-# - argocd/namespaces/namespace-cp4i.yaml
- 
+# MCM - Namespaces
+# - argocd/namespaces/cloudpal/mcm/namespace-ibm-infra-automation.yaml
+
+# CP4I 
+
+# CP4I - Namespaces
+# - argocd/namespaces/cloudpak/cp4i/namespace-cp4i.yaml
+
+# CP4BA
+
+# CP4BA - Namespaces
+ - argocd/namespaces/cloudpak/cp4ba/namespace-cp4ba.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-db2.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-output-info.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-openldap.yaml
+
+# CP4BA - RBAC
+ - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
+
+# CP4BA - Secrets
+# TODO: Add the ibm-entitlement key application here which adds the pull secret to the CP4BA namespace (sync wave considerations) 
+
+# DB2
+
+# DB2 - RBAC
+ - argocd/rbac/db2/rbac-db2-rootsquash.yaml
+# - argocd/rbac/db2/rbac-db2-config.yaml   Will need to be uncommented out
+
+# DB2 - Secret
+ - argocd/secrets/db2/db2-pull-secret.yaml
+
+# DB2 - PVC
+# - argocd/pvc/db2/db2-pvc.yaml           Will need to be uncommented out
+
  # External Secrets
  - argocd/rbac/rbac-external-secrets.yaml
  - argocd/namespaces/namespace-external-secrets.yaml
@@ -34,35 +63,23 @@ resources:
  - argocd/namespaces/namespace-rhacm-clusterpools.yaml
  - argocd/namespaces/namespace-rhacm-clusterclaims.yaml
  # RHACM Metal Provisioner (Not required if Hub is running on Bare-Metal)
- #- argocd/namespaces/namespace-metal-provisioner.yaml
-
-
- # DB2
- - argocd/rbac/rbac-db2-rootsquash.yaml
- - argocd/secrets/db2-pull-secret.yaml
- #-argocd/rbac/rbac-db2-config.yaml
-
-# RBAC CP4BA 
- - argocd/rbac/rbac-cp4ba.yaml
+ # - argocd/namespaces/namespace-metal-provisioner.yaml
 
  # Ansible Automation Platform
  - argocd/namespaces/namespace-ansible-automation-platform.yaml
  
  # OpenShift Virtualization (Can be used to host Instana Instance)
- #- argocd/rbac/rbac-openshift-virtualization.yaml
- #- argocd/namespaces/namespace-openshift-virtualization.yaml
- #- argocd/namespaces/namespace-openshift-virtualization-os-images.yaml
- #- argocd/namespaces/namespace-openshift-virtualization-virtual-machines.yaml
+ # - argocd/rbac/rbac-openshift-virtualization.yaml
+ # - argocd/namespaces/namespace-openshift-virtualization.yaml
+ # - argocd/namespaces/namespace-openshift-virtualization-os-images.yaml
+ # - argocd/namespaces/namespace-openshift-virtualization-virtual-machines.yaml
  
  # Openshift Advanced Cluster Security
- #- argocd/namespaces/namespace-openshift-acs.yaml
- 
- # IBM Infrastruture Automation aka MCM
- #- argocd/namespaces/namespace-ibm-infra-automation.yaml
+ # - argocd/namespaces/namespace-openshift-acs.yaml
  
  # RHSSO
- #- argocd/namespaces/namespace-sso.yaml
- #- argocd/namespaces/namespace-sso-integration.yaml
+ # - argocd/namespaces/namespace-sso.yaml
+ # - argocd/namespaces/namespace-sso-integration.yaml
  
  # OpenShift Service Mesh
  #- argocd/namespaces/namespace-openshift-operators-redhat.yaml
@@ -73,12 +90,11 @@ resources:
  - argocd/namespaces/namespace-quay-registry.yaml
  
  # OpenShift Data Foundation aka OpenShift Container Storage
- #- unneeded for IBM Cloud ROKS with ODF add-on configured
-#  - argocd/namespaces/namespace-openshift-storage.yaml
-#  - argocd/storage.yaml
- # - argocd/pvc/db2-pvc.yaml
+ # - unneeded for IBM Cloud ROKS with ODF add-on configured
+ # - argocd/namespaces/namespace-openshift-storage.yaml
+ # - argocd/storage.yaml
  # MachineSets and Infra Nodes
- #- unneeded for IBM Cloud ROKS with ODF add-on configured
+ # - unneeded for IBM Cloud ROKS with ODF add-on configured
  - argocd/machinesets.yaml
  - argocd/infraconfig.yaml
  
