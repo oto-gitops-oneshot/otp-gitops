@@ -21,10 +21,10 @@ resources:
  # Secrets Managment
  - argocd/instances/sealed-secrets.yaml
  - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets.yaml
+ - argocd/instances/external-secrets/external-secrets.yaml
 
  # SealedSecrets for API Key for External Secrets
- - argocd/instances/api-key-sealedsecret.yaml
+ - argocd/instances/external-secrets/api-key-sealedsecret.yaml
 
  # CICD
  #- argocd/operators/grafana-operator.yaml
@@ -35,7 +35,7 @@ resources:
 # DB2
  - argocd/operators/db2/db2-catalogsource.yaml
  - argocd/operators/db2/db2-subscription.yaml
- - argocd/instances/db2cluster-instance.yaml
+ - argocd/instances/db2/db2cluster-instance.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
@@ -97,7 +97,7 @@ resources:
  - argocd/operators/quay-bridge-operator.yaml
 
  # Deploying openldap based on osixia docker and apollo configuration 
- - argocd/instances/openldap.yaml
+ - argocd/instances/openldap/openldap.yaml
  # Configure db2 for cp4ba deployment 
 # - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
 # - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
