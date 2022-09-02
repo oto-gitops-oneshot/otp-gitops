@@ -7,24 +7,57 @@ resources:
  #- argocd/operators/ibm-common-services-mcm.yaml
  #- argocd/instances/ibm-common-services-mcm-instance.yaml
 
- # IBM Catalogs
- #- argocd/operators/ibm-catalogs.yaml
- # - argocd/instances/db2-configure.yaml
- # Required for IBM MQ
- # Required for IBM ACE, IBM MQ
- #- argocd/instances/cert-manager-instance.yaml
+
  
  # Certificate Management
  #- argocd/operators/cert-manager.yaml
  #- argocd/instances/cert-manager.yaml
 
  # Secrets Managment
+
+ # Sealed Secrets
  - argocd/instances/sealed-secrets.yaml
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets/external-secrets.yaml
 
  # SealedSecrets for API Key for External Secrets
  - argocd/instances/external-secrets/api-key-sealedsecret.yaml
+
+ # External Secrets
+ - argocd/operators/external-secrets.yaml
+ - argocd/instances/external-secrets/external-secrets.yaml
+
+# CloudPaks
+
+# CP4I
+
+# IBM Catalogs
+#- argocd/operators/ibm-catalogs.yaml
+# Required for IBM MQ
+# Required for IBM ACE, IBM MQ
+#- argocd/instances/cert-manager-instance.yaml
+
+ # CP4BA
+
+ # CP4BA - Operators 
+ - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
+ - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
+
+ # CP4BA - Predeploy Apps
+ - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
+ - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
+ - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
+ - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
+ # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml  (Likely not needed anymore)
+
+ # CP4BA - Deploy Apps - Custom Resource
+ - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
+
+ # CP4BA - Deploy Apps - Health Checks
+ # - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/corecheck.yaml   Will need to be uncommented
+ # - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/additonalcheck.yaml  Will need to be uncommented
+
+ # CP4BA - Postdeploy App(s)
+ - argocd/instances/cloudpak/cp4ba/postdeploy/postdeploy-config.yaml
+
 
  # CICD
  #- argocd/operators/grafana-operator.yaml
@@ -32,10 +65,13 @@ resources:
  # In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
  - argocd/operators/openshift-pipelines.yaml
 
-# DB2
+ # DB2
  - argocd/operators/db2/db2-catalogsource.yaml
  - argocd/operators/db2/db2-subscription.yaml
  - argocd/instances/db2/db2cluster-instance.yaml
+
+ # OpenLDAP
+ - argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
@@ -58,13 +94,6 @@ resources:
  #- argocd/instances/ibm-cp4mcm-instance.yaml
  #- argocd/operators/ibm-infra-automation-operator.yaml
  #- argocd/instances/ibm-infra-automation-instance.yaml
-
- # CP4BA 
- - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
- - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
- - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
-#  - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/corecheck.yaml
-#  - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/additonalcheck.yaml
  
  # Ansible Automation Platform
  - argocd/operators/ansible-automation-platform-operator.yaml
@@ -95,20 +124,6 @@ resources:
  - argocd/instances/quay-registry-instance.yaml
  - argocd/operators/quay-container-security.yaml
  - argocd/operators/quay-bridge-operator.yaml
-
- # Deploying openldap based on osixia docker and apollo configuration 
- - argocd/instances/openldap/openldap.yaml
- # Configure db2 for cp4ba deployment 
-# - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
-# - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
- # - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
- - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
-
- # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml
-
- - argocd/instances/cloudpak/cp4ba/postdeploy/postdeploy-config.yaml
-
- # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml
 
 patches:
 - target:
