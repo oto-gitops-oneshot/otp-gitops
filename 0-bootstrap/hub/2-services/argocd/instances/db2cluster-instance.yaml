@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: db2cluster-instance
   annotations:
-    argocd.argoproj.io/sync-wave: "290"
+    argocd.argoproj.io/sync-wave: "255"
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services
