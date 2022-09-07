@@ -26,7 +26,7 @@ resources:
  - argocd/namespaces/cloudpak/cp4ba/namespace-openldap.yaml
 
 # CP4BA - RBAC
- - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
+#  - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
 
 # DB2
 
