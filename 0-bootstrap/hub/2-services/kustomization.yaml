@@ -16,7 +16,7 @@ resources:
  # Secrets Managment
 
  # Sealed Secrets
- - argocd/instances/sealed-secrets.yaml
+#  - argocd/instances/sealed-secrets.yaml # Moved to Infra
 
  # SealedSecrets for API Key for External Secrets
  - argocd/instances/external-secrets/api-key-sealedsecret.yaml
