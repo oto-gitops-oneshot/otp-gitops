@@ -22,8 +22,8 @@ resources:
  - argocd/instances/external-secrets/api-key-sealedsecret.yaml
 
  # External Secrets
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets/external-secrets.yaml
+ # - argocd/operators/external-secrets.yaml
+ # - argocd/instances/external-secrets/external-secrets.yaml
 
 # CloudPaks
 
@@ -71,7 +71,7 @@ resources:
  #- argocd/instances/db2/db2cluster-instance.yaml
 
  # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
+ # - argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
