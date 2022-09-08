@@ -19,11 +19,11 @@ resources:
 #  - argocd/instances/sealed-secrets.yaml # Moved to Infra
 
  # SealedSecrets for API Key for External Secrets
- - argocd/instances/external-secrets/api-key-sealedsecret.yaml
+ # - argocd/instances/external-secrets/api-key-sealedsecret.yaml
 
  # External Secrets
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets/external-secrets.yaml
+ # - argocd/operators/external-secrets.yaml
+ # - argocd/instances/external-secrets/external-secrets.yaml
 
 # CloudPaks
 
