@@ -7,6 +7,7 @@ resources:
 
 # Sealed Secrets
  - argocd/instances/sealed-secrets.yaml
+
 # CloudPaks
 
 # MCM 
@@ -28,16 +29,16 @@ resources:
  - argocd/namespaces/cloudpak/cp4ba/namespace-openldap.yaml
 
 # CP4BA - RBAC
-#  - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
+ - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
 
 # DB2
 
 # DB2 - RBAC
  - argocd/rbac/db2/rbac-db2-rootsquash.yaml
-# - argocd/rbac/db2/rbac-db2-config.yaml   Will need to be uncommented out
+ - argocd/rbac/db2/rbac-db2-config.yaml
 
 # DB2 - PVC
-# - argocd/pvc/db2/db2-pvc.yaml           Will need to be uncommented out
+ - argocd/pvc/db2/db2-pvc.yaml
 
  # External Secrets
  - argocd/rbac/rbac-external-secrets.yaml
