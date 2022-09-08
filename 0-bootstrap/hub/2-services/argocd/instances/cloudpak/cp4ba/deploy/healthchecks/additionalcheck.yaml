@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: instances/cloudpak/cp4ba/deploy/healthchecks/additonal
+    path: instances/cloudpak/cp4ba/deploy/healthchecks/additional
   syncPolicy:
     automated:
       prune: true
