@@ -103,7 +103,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/oto-cp4ba-gitops/otp-gitops-infra.git
+      value: https://github.com/oto-gitops-oneshot/otp-gitops-infra.git
     - op: add
       path: /spec/source/targetRevision
       value: master
