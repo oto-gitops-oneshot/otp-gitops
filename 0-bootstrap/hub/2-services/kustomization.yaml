@@ -71,7 +71,7 @@ resources:
  #- argocd/instances/db2/db2cluster-instance.yaml
 
  # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
+ # - argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
