@@ -66,12 +66,12 @@ resources:
  - argocd/operators/openshift-pipelines.yaml
 
  # DB2
- - argocd/operators/db2/db2-catalogsource.yaml
- - argocd/operators/db2/db2-subscription.yaml
- - argocd/instances/db2/db2cluster-instance.yaml
+ #- argocd/operators/db2/db2-catalogsource.yaml
+ #- argocd/operators/db2/db2-subscription.yaml
+ #- argocd/instances/db2/db2cluster-instance.yaml
 
  # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
+ #- argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
