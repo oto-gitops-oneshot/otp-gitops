@@ -19,11 +19,11 @@ resources:
 #  - argocd/instances/sealed-secrets.yaml # Moved to Infra
 
  # SealedSecrets for API Key for External Secrets
- - argocd/instances/external-secrets/api-key-sealedsecret.yaml
+#  - argocd/instances/external-secrets/api-key-sealedsecret.yaml
 
  # External Secrets
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets/external-secrets.yaml
+#  - argocd/operators/external-secrets.yaml
+#  - argocd/instances/external-secrets/external-secrets.yaml
 
 # CloudPaks
 
@@ -38,22 +38,22 @@ resources:
  # CP4BA
 
  # CP4BA - Operators 
- - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
- - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
+#  - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
+#  - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
 
  # CP4BA - Predeploy Apps
- - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
- - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
- - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
- - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
+#  - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
+#  - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
+#  - argocd/instances/cloudpak/cp4ba/predeploy/global-ca.yaml
+#  - argocd/instances/cloudpak/cp4ba/predeploy/secrets.yaml
  # - argocd/instances/cloudpak/cp4ba/predeploy/automation-ui-config.yaml  (Likely not needed anymore)
 
  # CP4BA - Deploy Apps - Custom Resource
- - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
+#  - argocd/instances/cloudpak/cp4ba/deploy/icp4acluster.yaml
 
  # CP4BA - Deploy Apps - Health Checks
- - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/corecheck.yaml
- - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/additionalcheck.yaml
+#  - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/corecheck.yaml
+#  - argocd/instances/cloudpak/cp4ba/deploy/healthchecks/additionalcheck.yaml
 
  # CP4BA - Postdeploy App(s)
 #  - argocd/instances/cloudpak/cp4ba/postdeploy/postdeploy-config.yaml
@@ -66,12 +66,12 @@ resources:
  - argocd/operators/openshift-pipelines.yaml
 
  # DB2
- - argocd/operators/db2/db2-catalogsource.yaml
- - argocd/operators/db2/db2-subscription.yaml
- - argocd/instances/db2/db2cluster-instance.yaml
+#  - argocd/operators/db2/db2-catalogsource.yaml
+#  - argocd/operators/db2/db2-subscription.yaml
+#  - argocd/instances/db2/db2cluster-instance.yaml
 
  # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
+#  - argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
