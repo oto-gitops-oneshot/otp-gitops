@@ -6,7 +6,7 @@ resources:
  #- argocd/namespaces/namespace-cert-manager.yaml
 
 # Sealed Secrets
-#  - argocd/sealed-secrets.yaml
+ - argocd/sealed-secrets.yaml
 
 # CloudPaks
 
@@ -23,26 +23,26 @@ resources:
 # CP4BA
 
 # CP4BA - Namespaces
-#  - argocd/namespaces/cloudpak/cp4ba/namespace-cp4ba.yaml
-#  - argocd/namespaces/cloudpak/cp4ba/namespace-db2.yaml
-#  - argocd/namespaces/cloudpak/cp4ba/namespace-output-info.yaml
-#  - argocd/namespaces/cloudpak/cp4ba/namespace-openldap.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-cp4ba.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-db2.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-output-info.yaml
+ - argocd/namespaces/cloudpak/cp4ba/namespace-openldap.yaml
 
 # CP4BA - RBAC
-#  - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
+ - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
 
 # DB2
 
 # DB2 - RBAC
-#  - argocd/rbac/db2/rbac-db2-rootsquash.yaml
-#  - argocd/rbac/db2/rbac-db2-config.yaml
+ - argocd/rbac/db2/rbac-db2-rootsquash.yaml
+ - argocd/rbac/db2/rbac-db2-config.yaml
 
 # DB2 - PVC
-#  - argocd/pvc/db2/db2-pvc.yaml
+ - argocd/pvc/db2/db2-pvc.yaml
 
  # External Secrets
-#  - argocd/rbac/rbac-external-secrets.yaml
-#  - argocd/namespaces/namespace-external-secrets.yaml
+ - argocd/rbac/rbac-external-secrets.yaml
+ - argocd/namespaces/namespace-external-secrets.yaml
  
  - argocd/namespaces/namespace-sealed-secrets.yaml
  - argocd/namespaces/namespace-tools.yaml
