@@ -5,9 +5,6 @@ resources:
  #- argocd/namespaces/namespace-ibm-common-services.yaml
  #- argocd/namespaces/namespace-cert-manager.yaml
 
-# Sealed Secrets
- - argocd/sealed-secrets.yaml
-
 # CloudPaks
 
 # MCM 
@@ -39,6 +36,9 @@ resources:
 
 # DB2 - PVC
  - argocd/pvc/db2/db2-pvc.yaml
+
+# Sealed Secrets - Needed for CP4BA
+ - argocd/sealed-secrets.yaml
 
  # External Secrets
  - argocd/rbac/rbac-external-secrets.yaml
