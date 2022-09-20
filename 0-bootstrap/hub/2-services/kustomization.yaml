@@ -18,13 +18,6 @@ resources:
  # Sealed Secrets
 #  - argocd/instances/sealed-secrets.yaml # Moved to Infra
 
- # SealedSecrets for API Key for External Secrets
- - argocd/instances/external-secrets/api-key-sealedsecret.yaml
-
- # External Secrets
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets/external-secrets.yaml
-
 # CloudPaks
 
 # CP4I
@@ -41,6 +34,10 @@ resources:
  - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
  - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
 
+ # External Secrets
+ - argocd/operators/external-secrets.yaml
+ - argocd/instances/external-secrets/external-secrets.yaml
+
   # DB2
  - argocd/operators/db2/db2-catalogsource.yaml
  - argocd/operators/db2/db2-subscription.yaml
@@ -48,6 +45,9 @@ resources:
 
  # OpenLDAP
  - argocd/instances/openldap/openldap.yaml
+
+ # SealedSecrets for API Key for External Secrets
+ - argocd/instances/external-secrets/api-key-sealedsecret.yaml
 
  # CP4BA - Predeploy Apps
  - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
