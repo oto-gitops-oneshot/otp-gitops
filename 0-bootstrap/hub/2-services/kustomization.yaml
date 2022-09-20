@@ -41,6 +41,14 @@ resources:
  - argocd/operators/cloudpak/cp4ba/cp4ba-catalogsources.yaml
  - argocd/operators/cloudpak/cp4ba/cp4ba-subscription.yaml
 
+  # DB2
+ - argocd/operators/db2/db2-catalogsource.yaml
+ - argocd/operators/db2/db2-subscription.yaml
+ - argocd/instances/db2/db2cluster-instance.yaml
+
+ # OpenLDAP
+ - argocd/instances/openldap/openldap.yaml
+
  # CP4BA - Predeploy Apps
  - argocd/instances/cloudpak/cp4ba/predeploy/db2-configure.yaml
  - argocd/instances/cloudpak/cp4ba/predeploy/dbs-cp4ba-configuration.yaml
@@ -64,14 +72,6 @@ resources:
  #- argocd/instances/grafana-instance.yaml
  # In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
  - argocd/operators/openshift-pipelines.yaml
-
- # DB2
- - argocd/operators/db2/db2-catalogsource.yaml
- - argocd/operators/db2/db2-subscription.yaml
- - argocd/instances/db2/db2cluster-instance.yaml
-
- # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
