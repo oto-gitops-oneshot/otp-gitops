@@ -335,18 +335,6 @@ To get an entitlement key:
     scripts/patch-argocd-tls.sh
     ```
 
-## Install and configure HashiCorp Vault (If Required) - Single Instance [Demo Only]
-
-WHAT STEPS ARE NEEDED FOR HERE?!?!
-
-### Configure manifests for Infrastructure
-
-If you are running a managed OpenShift cluster on IBM Cloud, you can deploy OpenShift Data Foundation as an [add-on](https://cloud.ibm.com/docs/openshift?topic=openshift-ocs-storage-prep#odf-deploy-options). Otherwise, on AWS, Azure, IBM Cloud, GCP and vSphere run the following script to configure the machinesets, infra nodes and storage definitions for the `Cloud` you are using for the Hub Cluster
-
-   ```bash
-   ./scripts/infra-mod.sh
-   ```
-
 ## Bootstrap the OpenShift cluster 🥾
 
 - The bootstrap YAML follows the [app of apps pattern](https://argoproj.github.io/argo-cd/operator-manual/cluster-bootstrapping/#app-of-apps-pattern). 
