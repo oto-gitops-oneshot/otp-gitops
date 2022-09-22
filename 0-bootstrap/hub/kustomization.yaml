@@ -12,17 +12,17 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/oto-gitops-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/source/targetRevision
-      value: master
+      value: ${GIT_GITOPS_BRANCH}
 - target:
     group: argoproj.io
     kind: AppProject
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://charts.cloudnativetoolkit.dev
+      value: ${HELM_REPOURL}
 - target:
     group: argoproj.io
     kind: AppProject
@@ -30,10 +30,10 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-infra.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_INFRA}
 - target:
     group: argoproj.io
     kind: AppProject
@@ -41,10 +41,10 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-services.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_SERVICES}
 - target:
     group: argoproj.io
     kind: AppProject
@@ -52,10 +52,10 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-apps.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
 - target:
     group: argoproj.io
     kind: AppProject
@@ -63,10 +63,10 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-clusters.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_CLUSTERS}
 - target:
     group: argoproj.io
     kind: AppProject
@@ -74,10 +74,10 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitop-oneshot/otp-gitops.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-policies.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_POLICIES}
 - target:
     group: argoproj.io
     kind: Application

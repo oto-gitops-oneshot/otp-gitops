@@ -29,7 +29,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/oto-gitops-oneshot/otp-gitops-apps.git
+      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
     - op: add
       path: /spec/source/targetRevision
-      value: master
+      value: ${GIT_GITOPS_BRANCH}
