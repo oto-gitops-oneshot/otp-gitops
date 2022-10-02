@@ -28,6 +28,9 @@ resources:
 # CP4BA - RBAC
  - argocd/rbac/cloudpak/cp4ba/rbac-cp4ba.yaml
 
+# Openldap - RBAC
+ - argocd/rbac/openldap/rbac-openldap-job.yaml
+
 # DB2
 
 # DB2 - RBAC

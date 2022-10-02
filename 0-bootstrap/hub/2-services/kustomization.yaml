@@ -44,7 +44,8 @@ resources:
  - argocd/instances/db2/db2cluster-instance.yaml
 
  # OpenLDAP
- - argocd/instances/openldap/openldap.yaml
+ - argocd/instances/openldap/predeploy/openldap-predeploy.yaml
+ - argocd/instances/openldap/deploy/openldap.yaml
 
  # SealedSecrets for API Key for External Secrets
  - argocd/instances/external-secrets/api-key-sealedsecret.yaml
